@@ -1,0 +1,38 @@
+[
+  {
+    "title": "LVT \u2014 LSTM\u2013VAE\u2013Transformer for SMILES",
+    "description": "Lightweight encoder + Transformer decoder achieving high reconstruction accuracy and validity on ZINC15.",
+    "tags": [
+      "PyTorch",
+      "VAE",
+      "Transformers",
+      "ChemInformatics"
+    ],
+    "code": "https://github.com/YOUR-USERNAME/YOUR-REPO",
+    "paper": "#",
+    "image": "assets/placeholder.svg"
+  },
+  {
+    "title": "Dye\u2013VOC Reactivity Predictor",
+    "description": "Binary classifier over latent pairs to predict reactivity; roadmap includes graded reactivity scores.",
+    "tags": [
+      "SMILES",
+      "Latent Spaces",
+      "Classification"
+    ],
+    "code": "https://github.com/YOUR-USERNAME/YOUR-REPO",
+    "image": "assets/placeholder.svg"
+  },
+  {
+    "title": "RAG for Technical PDFs",
+    "description": "Streamlit-based PDF chat with persistent memory, refs [1],[2] in UI and figure citations.",
+    "tags": [
+      "RAG",
+      "Streamlit",
+      "NLP"
+    ],
+    "demo": "#",
+    "code": "https://github.com/YOUR-USERNAME/YOUR-REPO",
+    "image": "assets/placeholder.svg"
+  }
+]

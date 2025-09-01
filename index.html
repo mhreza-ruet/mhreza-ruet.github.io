@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Halim — Portfolio</title>
+  <meta name="description" content="Halim's portfolio: research, projects, publications, and contact." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+  <meta property="og:title" content="Halim — Portfolio" />
+  <meta property="og:description" content="Research, projects, and publications." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/hero.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script defer src="script.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Halim",
+    "url": "https://YOUR-USERNAME.github.io/",
+    "jobTitle": "PhD Student",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="#" class="logo">H<span>.</span></a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" aria-label="Toggle theme">🌓</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" role="region" aria-label="Hero">
+      <div class="hero-text">
+        <h1>Hi, I’m <span class="accent">Halim</span>.</h1>
+        <p class="subtitle">PhD student building ML systems for chemistry—generative models, RAG, and scientific tooling.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">See my work</a>
+          <a class="btn" href="assets/Halim_CV.pdf">Download CV</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="assets/hero.svg" alt="Geometric abstract hero art" />
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="about">
+        <img class="avatar" src="assets/avatar.svg" alt="Halim avatar illustration">
+        <p>
+          I’m a researcher and engineer focused on combining machine learning with chemical informatics.
+          Recent work includes a hybrid LSTM–VAE–Transformer for SMILES encoding/decoding, a reactivity
+          predictor for dye–VOC pairs, and a Streamlit RAG tool for technical PDFs.
+        </p>
+        <ul class="tags" aria-label="Skills">
+          <li>PyTorch</li><li>Transformers</li><li>VAE</li><li>Generative Models</li><li>SMILES</li><li>RAG</li><li>Streamlit</li><li>LaTeX</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div id="projectGrid" class="grid" aria-live="polite"></div>
+      <p class="hint">Add or edit items in <code>projects.json</code>.</p>
+    </section>
+
+    <section id="publications" class="section">
+      <h2>Publications</h2>
+      <ul class="pubs">
+        <li>
+          <strong>LVT: A Lightweight LSTM–VAE–Transformer for SMILES</strong> — preprint under review.
+          <span class="pub-meta">2025</span>
+        </li>
+        <li>
+          <strong>RAG for Technical PDFs with Persistent Context</strong> — workshop report.
+          <span class="pub-meta">2024</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="contact">
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/YOUR-USERNAME">YOUR-USERNAME</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/">YOUR-LINKEDIN</a></p>
+        <form action="https://formspree.io/f/YOUR-FORM-ID" method="POST" class="contact-form">
+          <label>Your email <input type="email" name="email" required></label>
+          <label>Message <textarea name="message" rows="4" required></textarea></label>
+          <button class="btn primary" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Halim. All rights reserved.</p>
+  </footer>
+</body>
+</html>
