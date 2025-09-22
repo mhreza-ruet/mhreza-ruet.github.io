@@ -6,10 +6,11 @@
   --card: #111827;
   --accent: #6ee7b7;
   --accent-2: #38bdf8;
+  --accent-3: #9fbd6f;
   --border: #1f2937;
 }
 :root.light{
-  --bg:#ffffff; --text:#0b0c10; --muted:#4b5563; --card:#f3f4f6; --accent:#0ea5e9; --accent-2:#22c55e; --border:#e5e7eb;
+  --bg:#ffffff; --text:#0b0c10; --muted:#4b5563; --card:#f3f4f6; --accent:#0ea5e9; --accent-2:#22c55e; --accent-3: #9fbd6f; --border:#e5e7eb;
 }
 
 *{box-sizing:border-box}
@@ -31,14 +32,16 @@ body{
 .nav a:hover{color:var(--text)}
 .nav button{margin-left:8px; background:transparent; border:1px solid var(--border); border-radius:8px; padding:6px 10px; color:var(--text); cursor:pointer}
 
-.hero-art img { max-width: 100%; height: auto; max-height: 320px; border-radius: 16px; object-fit: cover; display: block; margin: 0 auto}
+.hero{display:grid; grid-template-columns:1.2fr 1fr; gap:28px; padding:72px 20px; max-width:1100px; margin:0 auto}
+.hero-art{display:flex; align-items:right; justify-content:right}
+.hero-art img{width:100%; max-width:520px; height:auto; border-radius:20px; border:1px solid var(--border)}
 .hero-text h1{font-size:clamp(2rem,4vw,3.2rem); margin:0 0 8px}
 .subtitle{color:var(--muted); margin-top:0}
 .cta{margin-top:18px; display:flex; gap:12px}
 .btn{display:inline-block; padding:10px 16px; border:1px solid var(--border); border-radius:12px; text-decoration:none; color:var(--text); transition:transform .06s ease}
 .btn:hover{transform:translateY(-1px)}
-.btn.secondary{background:linear-gradient(135deg, var(--accent), var(--accent-2)); color:#30a777; border:none}
-.btn.primary{background:linear-gradient(135deg, var(--accent), var(--accent-2)); color:#0b0c10; border:none}
+.btn.secondary{background:linear-gradient(135deg, var(--accent), var(--accent-3)); color:#0b0c10; border:none}
+.btn.primary{background:linear-gradient(135deg, var(--accent-3), var(--accent-2)); color:#0b0c10; border:none}
 
 .section{padding:54px 20px; max-width:1100px; margin:0 auto}
 .section h2{font-size:1.8rem; margin:0 0 18px}
