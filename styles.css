@@ -7,11 +7,7 @@
   --accent: #6ee7b7;
   --accent-2: #38bdf8;
   --accent-3: #9fbd6f;
-<<<<<<< HEAD
   --border: #074edd;
-=======
-  --border: #074edd;
->>>>>>> 02947ad (modified:   styles.css)
 }
 :root.light{
   --bg:#ffffff; --text:#0b0c10; --muted:#4b5563; --card:#f3f4f6; --accent:#0ea5e9; --accent-2:#22c55e; --accent-3: #9fbd6f; --border:#e5e7eb;
