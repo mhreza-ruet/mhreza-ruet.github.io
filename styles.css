@@ -7,7 +7,7 @@
   --accent: #6ee7b7;
   --accent-2: #38bdf8;
   --accent-3: #9fbd6f;
-  --border: #1f2937;
+  --border: #074edd;
 }
 :root.light{
   --bg:#ffffff; --text:#0b0c10; --muted:#4b5563; --card:#f3f4f6; --accent:#0ea5e9; --accent-2:#22c55e; --accent-3: #9fbd6f; --border:#e5e7eb;
@@ -46,6 +46,8 @@ body{
 .section{padding:54px 20px; max-width:1100px; margin:0 auto}
 .section h2{font-size:1.8rem; margin:0 0 18px}
 .about{display:grid; grid-template-columns:120px 1fr; gap:18px; align-items:start}
+.about .tags{grid-column:2}
+.about p{margin:0 0 12px; text-align:justify}
 .avatar{width:120px; height:120px; border-radius:16px; border:1px solid var(--border); background:var(--card); padding:8px}
 .tags{display:flex; flex-wrap:wrap; gap:8px; list-style:none; padding:0; margin:12px 0 0}
 .tags li{border:1px solid var(--border); background:var(--card); padding:6px 10px; border-radius:999px; color:var(--muted)}
@@ -84,4 +86,5 @@ body{
 @media (max-width: 600px){
   .grid{grid-template-columns:1fr}
   .about{grid-template-columns:1fr}
+  .about .tags{grid-column:1}
 }
