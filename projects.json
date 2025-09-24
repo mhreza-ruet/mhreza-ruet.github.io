@@ -1,38 +1,60 @@
 [
   {
-    "title": "LVT \u2014 LSTM\u2013VAE\u2013Transformer for SMILES",
-    "description": "Lightweight encoder + Transformer decoder achieving high reconstruction accuracy and validity on ZINC15.",
-    "tags": [
-      "PyTorch",
-      "VAE",
-      "Transformers",
-      "ChemInformatics"
-    ],
-    "code": "https://github.com/YOUR-USERNAME/YOUR-REPO",
-    "paper": "#",
-    "image": "assets/placeholder.svg"
-  },
+  "title": "Knowledge Hub LLM System",
+  "description": "Developing a multi-stage AI pipeline for a global research knowledge hub. Implemented synthetic data generation and dummy report creation using the OpenAI API, along with a Retrieval-Augmented Generation (RAG) system with memory. Currently working toward fine-tuning LLMs on actual research papers and designing multi-agent monitoring with guardrails.",
+  "tags": [
+    "LLM",
+    "OpenAI API",
+    "RAG",
+    "Synthetic Data",
+    "Streamlit",
+    "Fine-tuning",
+    "Multi-agent Systems"
+  ],
+  "code": "https://github.com/mhreza-ruet/Proj-showcase/tree/main/STEPS-LLM",
+  "image": "assets/STEPS_icon.png"
+},
   {
-    "title": "Dye\u2013VOC Reactivity Predictor",
-    "description": "Binary classifier over latent pairs to predict reactivity; roadmap includes graded reactivity scores.",
-    "tags": [
-      "SMILES",
-      "Latent Spaces",
-      "Classification"
-    ],
-    "code": "https://github.com/YOUR-USERNAME/YOUR-REPO",
-    "image": "assets/placeholder.svg"
-  },
-  {
-    "title": "RAG for Technical PDFs",
-    "description": "Streamlit-based PDF chat with persistent memory, refs [1],[2] in UI and figure citations.",
-    "tags": [
-      "RAG",
-      "Streamlit",
-      "NLP"
-    ],
-    "demo": "#",
-    "code": "https://github.com/YOUR-USERNAME/YOUR-REPO",
-    "image": "assets/placeholder.svg"
-  }
+  "title": "VOC Sensing Dye Detection Models",
+  "description": "Developed three deep generative models (VAE, LTVAE, and Trans-VAE) for dye–VOC interaction prediction, trained and evaluated on identical datasets. Compared architectures and trainable parameters with near-similar performance outcomes.",
+  "tags": [
+    "PyTorch",
+    "VAE",
+    "BiLSTM",
+    "Transformers",
+    "Tokenization",
+    "GPU Training",
+    "Remote VM"
+  ],
+  "code": "https://github.com/mhreza-ruet/Proj-showcase/tree/main/Cheminformatics",
+  "image": "assets/molecule.png"
+},
+{
+  "title": "Vision Transformer for Image Classification",
+  "description": "Implemented a Vision Transformer (ViT) from scratch in PyTorch for image classification on CIFAR-10. Focused on understanding patch embeddings, self-attention, and transformer blocks rather than maximizing accuracy, as part of a computer vision course project.",
+  "tags": [
+    "Vision Transformer",
+    "PyTorch",
+    "Computer Vision",
+    "Image Classification",
+    "CIFAR-10",
+    "Attention Mechanisms"
+  ],
+  "code": "https://github.com/mhreza-ruet/Proj-showcase/tree/main/ECE-763",
+  "image": "assets/VT.webp"
+},
+{
+  "title": "Laplacian Blob Detector with 2D CNN",
+  "description": "Implemented a 2D CNN-based model for detecting Laplacian blobs as part of an image processing course project. Combined classical image processing principles with deep learning, comparing CNN detection with traditional methods.",
+  "tags": [
+    "CNN",
+    "Image Processing",
+    "Blob Detection",
+    "Laplacian of Gaussian",
+    "Deep Learning",
+    "2D Convolutions"
+  ],
+  "code": "https://github.com/mhreza-ruet/Proj-showcase/tree/main/ECE-558_Img_Processing",
+  "image": "assets/blob.webp"
+}
 ]
