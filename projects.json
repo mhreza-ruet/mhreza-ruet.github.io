@@ -42,7 +42,6 @@
   ],
   "code": "https://github.com/mhreza-ruet/Proj-showcase/tree/main/ECE-763",
   "image": "assets/VT.webp"
-<<<<<<< HEAD
 },
 {
   "title": "Laplacian Blob Detector with 2D CNN",
@@ -57,7 +56,5 @@
   ],
   "code": "https://github.com/mhreza-ruet/Proj-showcase/tree/main/ECE-558_Img_Processing",
   "image": "assets/blob.webp"
-=======
->>>>>>> 734082fbd51cbd7a758af7715e95e487f08a004e
 }
 ]
