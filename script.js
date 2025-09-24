@@ -11,7 +11,7 @@
   });
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  fetch('projects.json')
+  fetch('projects.json', { cache: 'no-store' })
     .then(r => r.json())
     .then(items => {
       const grid = document.getElementById('projectGrid');
