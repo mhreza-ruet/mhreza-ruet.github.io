@@ -15,6 +15,7 @@
     .then(r => r.json())
     .then(items => {
       const grid = document.getElementById('projectGrid');
+      if(!grid) return;
       const frag = document.createDocumentFragment();
       items.forEach(p => {
         const card = document.createElement('article');
@@ -35,4 +36,56 @@
       grid.appendChild(frag);
     })
     .catch(()=>{});
+
+  const lifeCards = document.querySelectorAll('.life-card:not(.life-card--empty)');
+  if(lifeCards.length){
+    const overlay = document.createElement('div');
+    overlay.className = 'lightbox';
+    overlay.innerHTML = `
+      <div class="lightbox__inner">
+        <button class="lightbox__close" type="button"><span>Close</span></button>
+        <img alt="" />
+      </div>
+    `;
+    document.body.appendChild(overlay);
+    const overlayImg = overlay.querySelector('img');
+    const closeBtn = overlay.querySelector('.lightbox__close');
+
+    const close = () => {
+      overlay.classList.remove('is-open');
+      document.body.classList.remove('lightbox-open');
+      overlayImg.removeAttribute('src');
+    };
+
+    const open = (src, alt) => {
+      overlayImg.src = src;
+      overlayImg.alt = alt;
+      overlay.classList.add('is-open');
+      document.body.classList.add('lightbox-open');
+    };
+
+    lifeCards.forEach(card => {
+      card.setAttribute('tabindex', '0');
+      card.addEventListener('click', () => {
+        const src = card.dataset.full || card.querySelector('img')?.src;
+        if(!src) return;
+        const alt = card.dataset.alt || card.querySelector('img')?.alt || '';
+        open(src, alt);
+      });
+      card.addEventListener('keydown', evt => {
+        if(evt.key === 'Enter' || evt.key === ' '){
+          evt.preventDefault();
+          card.click();
+        }
+      });
+    });
+
+    closeBtn.addEventListener('click', close);
+    overlay.addEventListener('click', evt => {
+      if(evt.target === overlay) close();
+    });
+    document.addEventListener('keydown', evt => {
+      if(evt.key === 'Escape' && overlay.classList.contains('is-open')) close();
+    });
+  }
 })();

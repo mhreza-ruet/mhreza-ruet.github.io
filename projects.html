@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Halim — Projects</title>
+  <meta name="description" content="Selected research and engineering projects by Halim." />
+  <link rel="icon" href="assets/logo.png" type="image/svg+xml">
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+  <meta property="og:title" content="Halim — Projects" />
+  <meta property="og:description" content="Explore featured research and engineering projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/hero.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo"><img src="assets/logo.png" alt="Halim logo" class="logo-mark"></a>
+    <nav class="nav">
+      <a href="index.html#about">About</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="accomplishments.html">Accomplishments</a>
+      <a href="life.html">Life Updates</a>
+      <a href="contact.html">Contact</a>
+      <button id="themeToggle" aria-label="Toggle theme">🌓</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section page-hero page-hero--accent">
+      <h1>Projects</h1>
+      <p class="section-subtext">Interactive project cards load dynamically—check back as new work ships.</p>
+      <div id="projectGrid" class="grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Halim. All rights reserved.</p>
+  </footer>
+</body>
+</html>
