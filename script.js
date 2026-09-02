@@ -21,7 +21,10 @@
         const card = document.createElement('article');
         card.className = 'card';
         card.innerHTML = `
-          <img src="${p.image || 'assets/placeholder.svg'}" alt="${p.title} thumbnail">
+          <div class="card-media">
+            <img src="${p.image || 'assets/placeholder.svg'}" alt="${p.title} graphical abstract" loading="lazy">
+            ${p.imageCredit ? `<span class="image-credit">${p.imageCredit}</span>` : ''}
+          </div>
           <div class="title">${p.title}</div>
           <div class="desc">${p.description}</div>
           <div class="tags">${(p.tags||[]).map(t=>`<span class="tag">${t}</span>`).join(' ')}</div>

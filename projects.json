@@ -1,5 +1,20 @@
 [
   {
+    "title": "GNN-Driven Drug Repurposing with Knowledge Graphs",
+    "description": "Developing a drug-repurposing framework that integrates drug names, SMILES representations, molecule types, clinical status, UniProt identifiers, protein sequences, and disease data into a connected knowledge graph. A graph neural network scores indirectly connected drugs for a given disease, prioritizing existing therapies with potential new indications—particularly candidates that share relevant protein targets with the disease. This is an ongoing confidential project; implementation details and source code are not publicly available.",
+    "tags": [
+      "Drug Repurposing",
+      "Knowledge Graph",
+      "GNN",
+      "Link Prediction",
+      "Neo4j",
+      "Cheminformatics",
+      "Bioinformatics"
+    ],
+    "image": "assets/drug_repurposing.png",
+    "imageCredit": "Graphical abstract created with Google Gemini"
+  },
+  {
   "title": "Knowledge Hub LLM System",
   "description": "Developing a multi-stage AI pipeline for a global research knowledge hub. Implemented synthetic data generation and dummy report creation using the OpenAI API, along with a Retrieval-Augmented Generation (RAG) system with memory. Currently working toward fine-tuning LLMs on actual research papers and designing multi-agent monitoring with guardrails.",
   "tags": [
