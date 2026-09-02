@@ -40,7 +40,9 @@ body{
 .hero{display:grid; grid-template-columns:1.2fr 1fr; gap:28px; padding:72px 20px; max-width:1100px; margin:0 auto}
 .hero-art{display:flex; align-items:right; justify-content:right}
 .hero-art img{width:100%; max-width:520px; height:auto; border-radius:20px; border:1px solid var(--border)}
-.hero-text h1{font-size:clamp(2rem,4vw,3.2rem); margin:0 0 8px}
+.hero-text{align-self:center}
+.hero-kicker{margin:0 0 10px; color:var(--accent-2); font-size:.78rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase}
+.hero-text h1{font-size:clamp(2.4rem,5.4vw,4.35rem); line-height:1.03; letter-spacing:-.045em; margin:0 0 18px}
 .subtitle{color:var(--muted); margin-top:0}
 .cta{margin-top:18px; display:flex; gap:12px}
 .btn{display:inline-block; padding:10px 16px; border:1px solid var(--border); border-radius:12px; text-decoration:none; color:var(--text); transition:transform .06s ease}
