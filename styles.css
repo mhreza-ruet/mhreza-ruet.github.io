@@ -44,6 +44,7 @@ body{
 .hero-kicker{margin:0 0 10px; color:var(--accent-2); font-size:.78rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase}
 .hero-text h1{font-size:clamp(2.4rem,5.4vw,4.35rem); line-height:1.03; letter-spacing:-.045em; margin:0 0 18px}
 .subtitle{color:var(--muted); margin-top:0}
+.work-authorization{display:inline-flex; flex-wrap:wrap; gap:0 .45em; margin:4px 0 0; padding:6px 11px; border:1px solid color-mix(in srgb,var(--accent-3) 45%,var(--border)); border-radius:999px; background:color-mix(in srgb,var(--accent-3) 10%,transparent); color:var(--text); font-size:.84rem; font-weight:600}
 .cta{margin-top:18px; display:flex; gap:12px}
 .btn{display:inline-block; padding:10px 16px; border:1px solid var(--border); border-radius:12px; text-decoration:none; color:var(--text); transition:transform .06s ease}
 .btn:hover{transform:translateY(-1px)}
