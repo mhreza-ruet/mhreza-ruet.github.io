@@ -81,8 +81,8 @@ body{
 .appointment-list li::before{content:""; position:absolute; top:.65em; left:1px; width:6px; height:6px; border-radius:50%; background:var(--accent-3)}
 .appointment-list span{display:inline-block; margin-left:8px; color:var(--muted); font-size:.86rem}
 
-.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr)); gap:18px}
-.projects-content{max-width:1600px; padding-top:18px}
+.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,215px),1fr)); gap:18px}
+.projects-content{width:calc(100% - 32px); max-width:1800px; padding:18px 0 54px}
 .card{
   background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px; display:flex; flex-direction:column; gap:10px;
 }
@@ -185,6 +185,8 @@ body.lightbox-open{overflow:hidden}
   .life-grid{grid-template-columns:repeat(2, minmax(200px, 1fr))}
 }
 @media (max-width: 600px){
+  .grid{grid-template-columns:1fr}
+  .projects-content{width:calc(100% - 28px)}
   .about{grid-template-columns:1fr}
   .about .tags{grid-column:1}
   .page-hero{padding-top:44px; padding-bottom:26px}
